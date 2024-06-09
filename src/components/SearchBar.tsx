@@ -20,7 +20,7 @@ const SearchBar = (props: Props) => {
   return (
     <div>
       <form
-        className="flex justify-center gap-4 bg-gray-200 rounded-md p-2 w-[30rem]"
+        className="flex justify-center gap-4 bg-gray-200 rounded-md p-2 w-[25rem]"
         onSubmit={handleSearch}
       >
         <input
