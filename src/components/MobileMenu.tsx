@@ -13,7 +13,9 @@ const Menu = (props: Props) => {
       {menu && (
         <div className="flex flex-col w-full bg-black absolute top-20 right-0 left-0 h-[calc(100vh-80px)] text-white items-center gap-10 text-xl py-10">
           {links.map((link) => (
-            <Link href={link.href}>{link.name}</Link>
+            <Link href={link.href} key={link.name}>
+              {link.name}
+            </Link>
           ))}
         </div>
       )}
